@@ -1,1 +1,266 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Mixins */
+/* headder/nav */
+.mainWrap {
+  max-width: 1080px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.mainWrap header {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 90%;
+  margin: 35px auto;
+}
+.mainWrap header h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: royalblue;
+  border-bottom: 3px solid royalblue;
+}
+.mainWrap header h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: royalblue;
+}
+.mainWrap header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainWrap header nav ul {
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.mainWrap header nav ul a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: lightsteelblue;
+}
+.mainWrap header nav ul a:hover {
+  color: lime;
+}
+/* main content*/
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}
+.mainContent .leftColumn {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 48%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.mainContent .leftColumn .leftContent {
+  width: 97%;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.mainContent .leftColumn .leftContent p {
+  padding: 10px;
+}
+.mainContent .leftColumn .leftContent .contImage {
+  width: 100%;
+}
+.mainContent .leftColumn .leftContent .contImage img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.mainContent .leftColumn .leftContent .leftConHead {
+  width: 100%;
+  background-color: black;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.mainContent .leftColumn .leftContent .leftConHead h3 {
+  color: white;
+  font-size: 1.7rem;
+}
+.mainContent .rightColumn {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 48%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.mainContent .rightColumn .rightContent {
+  width: 97%;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.mainContent .rightColumn .rightContent p {
+  padding: 10px;
+}
+.mainContent .rightColumn .rightContent .contImage {
+  width: 100%;
+}
+.mainContent .rightColumn .rightContent .contImage img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.mainContent .rightColumn .rightContent .rightConHead {
+  width: 100%;
+  background-color: black;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.mainContent .rightColumn .rightContent .rightConHead h3 {
+  color: white;
+  font-size: 1.7rem;
+}
